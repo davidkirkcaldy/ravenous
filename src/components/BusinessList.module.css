@@ -1,0 +1,13 @@
+/*
+ *   Copyright (c) 2025 David Kirkcaldy
+ *   All rights reserved.
+ */
+ .businessesContainer {
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    min-height: auto;
+    justify-content: space-around;
+    align-content:space-between;
+    flex-wrap: wrap;
+}

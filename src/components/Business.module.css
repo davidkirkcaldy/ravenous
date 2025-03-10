@@ -1,0 +1,66 @@
+/*
+ *   Copyright (c) 2025 David Kirkcaldy
+ *   All rights reserved.
+ */
+
+ /* div {
+    border: 1px solid red;
+ } */
+ .businessContainer {
+    display: flex-inline;
+    background-color: white;
+    align-items: center;
+    justify-items: left;
+    margin-top: 30px;
+    max-width: 300px;
+}
+
+.itemWidth {
+    max-width: 100px;  
+}
+
+.businessImage {
+    float: left;
+    margin: 0;
+}
+
+.businessImage img {
+    /* Made image resizable using % */
+    width: 100%;
+    height: auto;
+}
+
+.businessDetails {
+    display: inline-flex;
+    float:right;
+    align-items: flex-start;
+    justify-items:center;
+    margin-top: 0;
+    max-height: 180px;
+    width: 100%;
+    /*Separate two blocks of text*/
+    justify-content: space-between;
+    padding: 5px auto;
+}
+
+.businessDetails ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin:0;
+
+    display:inline-block;
+    justify-content: center;
+
+} 
+
+.businessAddress {
+    text-align: left;
+}
+
+.businessInfo {
+    text-align: right;
+}
+
+.businessInfo li {
+    justify-items: center;
+}

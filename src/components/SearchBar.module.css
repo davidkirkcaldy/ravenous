@@ -1,0 +1,60 @@
+/*
+ *   Copyright (c) 2025 David Kirkcaldy
+ *   All rights reserved.
+ */
+
+ .searchBar {
+    justify-items: center;
+    background-image: url("../resources/images/banner-landingpage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+ }
+
+ .searchOptions {
+    width: 100%;
+ }
+
+ .searchOptions ul {
+    width:50%;
+    /* Add display and justify-content to set the list to horizontal*/
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    justify-self: center;
+ }
+
+.searchOptions li {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin:0;  
+    width: 20%;
+}
+
+.sortOption {
+    background: none;
+    border: none;
+    width: 40%;
+    text-align: center;
+    color: white;
+}
+
+.searchTexts {
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 20px; 
+    width: 75%;
+}
+
+.searchTexts input {
+    margin: 10px 0;
+    width: 40%;
+}
+
+.searchButton {
+    margin: 10px auto;
+    padding: 5px 20px;
+    background-color: Tan;
+    color: white;
+}
