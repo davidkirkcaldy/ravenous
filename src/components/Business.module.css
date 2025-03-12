@@ -26,8 +26,8 @@
 
 .businessImage img {
     /* Made image resizable using % */
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
 }
 
 .businessDetails {
@@ -40,7 +40,6 @@
     width: 100%;
     /*Separate two blocks of text*/
     justify-content: space-between;
-    padding: 5px auto;
 }
 
 .businessDetails ul {
@@ -50,15 +49,21 @@
 
     display:inline-block;
     justify-content: center;
-
 } 
+
+.businessTitle {
+    text-align: left;
+    padding: 5px 5px;
+}
 
 .businessAddress {
     text-align: left;
+    padding: 5px 5px;
 }
 
 .businessInfo {
     text-align: right;
+    padding: 5px 5px;
 }
 
 .businessInfo li {

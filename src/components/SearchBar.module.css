@@ -5,7 +5,7 @@
 
  .searchBar {
     justify-items: center;
-    background-image: url("../resources/images/banner-landingpage.jpg");
+    background-image: url("./background_search_desktop.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

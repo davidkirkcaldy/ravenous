@@ -5,54 +5,41 @@
 import React from 'react';
 import classes from './Business.module.css'
 
-const business = {
-    image: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
-    name: "Pizza Reallyfast",
-    address: "5 High Street",
-    city: "Teddington",
-    state: "surrey",
-    zipcode: "11111",
-    category: "Japanese",
-    rating: 4,
-    reviewCount: 90
-}
-
-function BusinessAddress() {
+function BusinessAddress(props) {
     return  (
     <div className={classes.businessAddress}>
         <ul>
-            <li>{business.address}</li>
-            <li>{business.city}</li>
-            <li>{business.state}</li>
-            <li>{business.zipcode}</li>
+            <li>{props.business.address}</li>
+            <li>{props.business.city}</li>
+            <li>{`${props.business.state} ${props.business.zipCode}`}</li>
         </ul>
     </div>
     );
 }
 
-function BusinessInfo() {
+function BusinessInfo(props) {
     return (                    
     <div className={classes.businessInfo}>
         <ul>
-            <li className="category">{business.category}</li>
-            <li className="rating">{business.rating}</li>
-            <li>{business.reviewCount}</li>
+            <li className="category">{props.business.category}</li>
+            <li className="rating">{`${props.business.rating.toFixed(1)} stars`}</li>
+            <li>{`${props.business.reviewCount} reviews`}</li>
         </ul>
     </div>
     );
 }
 
-function Business() {
+function Business(props) {
 
     return (
         <div className={classes.businessContainer}>
             <div className={classes.businessImage}>
-                <img src={business.image} alt={business.name} />  
+                <img src={props.business.imageSrc} alt={props.business.name} />  
             </div>
-            <h2>{business.name}</h2>
+            <h2 className={classes.businessTitle}>{props.business.name}</h2>
             <div className={classes.businessDetails}>
-                <BusinessAddress />
-                <BusinessInfo />
+                <BusinessAddress business={props.business}/>
+                <BusinessInfo business={props.business}/>
             </div>
         </div>
     );

@@ -8,12 +8,12 @@ import classes from './SearchBar.module.css'
 
 function SortOption(props) {
     const [optionSelected, setOptionSelected] = useState(props.value);
-    const [textColor, setTextColor] = useState(props.value ? {color: 'red'} : {color: 'white'});
 
     function updateOptionHandler(event) {
-        setOptionSelected(!optionSelected);
-        setTextColor(optionSelected  ? {color: 'red'} : {color: 'white'});   
+        setOptionSelected(!optionSelected);   
     }
+
+    let textColor = optionSelected  ? {color: 'lightblue'} : {color: 'white'};
 
     return (
         <button 
